@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarsh Manandhar Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/share?selection.family=Lato:wght@100%7CNunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000%7CPoppins:ital,wght@0,300;0,400;1,200">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            
+                <h2> TO  CONTACT  ME </h2>
+                <div class="container-box">
+                    <!-- -- -->
+                <div class="container-left">
+                    <h3></h3>
+                    <form onsubmit=" sendEmail(); reset(); return false;">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text"  id="name" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email"  id="email" placeholder="Your Email" required>
+                            </div>
+                            </div>
+                            <div class="input-row">
+                            <div class="input-group">
+                                <label>Mobile No.</label>
+                                <input type="text"  id="mobile" placeholder="Your Mobile no." required>
+                            </div>
+
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="10" placeholder="Message"></textarea>
+
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <!-- ----- -->
+                <div class="container-right">
+                    <h4> I shall promptly provide a response upon receipt of the email. </h4>
+                    <h5> - Aarsh Manandhar</h5>
+                    
+                </div>
+            </div>
+
+                <!-- <form>
+                <input type="text"  id="name" placeholder="Your Name" required>
+                <input type="email"  id="email" placeholder="Your Email" required>
+                <input type="text"  id="Mobile" placeholder="Mobile No." required>
+            </form> -->
+
+        </div>
+       
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "aarshmanandhar17@gmail.com",
+    Password : "Website@321$$",
+    To : 'aarshmdhr@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Information",
+    Body : "Name: "
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html

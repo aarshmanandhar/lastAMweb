@@ -1,0 +1,380 @@
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.logo{
+    width: 120px;
+    height: 40px;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: lightcoral;
+}
+
+.detal{
+    margin-left: 8%;
+    margin-top: 12%;
+}
+
+.detal h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+ 
+.detal p{
+    color:  rgba(182, 182, 182, 0.959);
+    line-height: 22px;
+}
+
+.detal a{
+   background: black ;
+   padding: 10px 18px;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   display: inline-block;
+   margin: 30px 0;
+   border-radius: 5px;
+
+}
+
+.image{
+    width: 40%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image:hover .shape{
+    bottom: 120px;
+
+}
+.image:hover .boy{
+    left: 45%;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    font-size: 22px;
+    
+   
+    
+}
+
+.container-box{
+    background: #FFFBF1;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.container-left{
+    flex-basis: 60%;
+    padding: 30px 60px;
+    background: #E2e2e2;
+
+}
+
+.container-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: orange;
+
+}
+
+.container p{
+    margin-bottom: 40px;
+
+}
+
+h2{
+   
+    margin-bottom: 10px;
+    color: orange;
+}
+h3{
+    color:  #505050;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4{
+    color: white;
+    font-weight: 400;
+    margin-top: 155px;
+    margin-bottom: 40px;
+}
+h5{
+    color: white;}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+     border: none;
+     border-bottom: 1px solid #bebebe;
+     outline: none;
+     padding-bottom: 5px;
+     background: #E2e2e2;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    background: #E2e2e2;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color:  #505050;
+}
+
+button{
+    background-color: orange ;
+    width: 100px;
+    border:none;
+    outline: none;
+    height: 35px;
+     border-radius: 30px;
+    color: #ffff;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+/* iphone se */
+@media screen and (max-width: 600px) {
+ 
+  .logo{
+    width:50px;
+    height:20px;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav{
+    display: flex;
+    width: 10%;
+    margin: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detal h1{
+    font-size: 22px;
+    color: black;
+    margin-bottom: 30px;
+}
+.detal p{
+    color:  rgba(182, 182, 182, 0.959);
+    line-height: 18px;
+    font-size: 14px;
+
+}
+
+.detal a{
+    background: black ;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 220px 0;
+    border-radius: 5px;
+ 
+ }
+
+
+   
+    .image{
+        width: 45%;
+        height: 55%;
+        position: absolute;
+        bottom: 205px;
+        right: 120px;
+    }
+    
+    .image img{
+        height: 50%;
+        position: absolute;
+        left: 40%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+    
+    .image:hover .shape{
+        bottom: 0px;
+    
+    }
+    .image:hover .boy{
+        left: 25%;
+    }
+
+    
+    nav{
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin: 15px 20px;
+
+    }
+    
+    nav ul li a:hover{
+        color: lightcoral;
+    }
+    
+    .detal{
+        margin-left: 9%;
+        margin-top: 12%;
+    }
+
+
+    .container{
+        width: 80%;
+        
+        margin: 10px auto;
+        font-size: 8px;}
+        
+       
+        
+
+
+    .container-left{
+        flex-basis: 65%;
+        padding: 10px 20px;
+        font-size: 15px;
+        background: #E2e2e2;
+    
+    }
+    
+    .container-right{
+        flex-basis: 10%;
+        padding: 35px;
+        font-size: 12px;
+        background: orange;
+    
+    }
+    h4{
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    h5{
+        color: white;}
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    textarea{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-bottom: 0px;
+        background: #E2e2e2;
+
+}
+button{
+    background-color: orange ;
+    width: 50px;
+    border:none;
+    outline: none;
+    height: 25px;
+    border-radius: 30px;
+    color: #ffff;
+    margin-top: 3px;
+    font-size: 8px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+}
+
